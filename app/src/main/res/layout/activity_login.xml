@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.activity.LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_kuang_server"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_kuang">
+
+        <ImageView
+            android:id="@+id/imgv_server"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/sa"/>
+
+        <View
+            android:id="@+id/line_server"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imgv_server"
+            android:background="#000"
+            />
+
+        <EditText
+            android:id="@+id/edt_server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/line_server"
+            android:background="@null"
+            android:text="http://101.200.183.103:9999"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_kuang_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_kuang_server"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_kuang">
+
+        <ImageView
+            android:id="@+id/imgv_username"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/qihoo_accounts_user_lable"/>
+
+        <View
+            android:id="@+id/line_username"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imgv_username"
+            android:background="#000"
+            />
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/line_username"
+            android:background="@null"
+           />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_kuang_userpwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_kuang_username"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_kuang">
+
+        <ImageView
+            android:id="@+id/imgv_userpwd"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/qihoo_accounts_pass_lable"/>
+
+        <View
+            android:id="@+id/line_userpwd"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imgv_userpwd"
+            android:background="#000"
+            />
+
+        <EditText
+            android:id="@+id/edt_userpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/line_userpwd"
+            android:background="@null"
+            android:inputType="textPassword"
+
+            />
+
+        <Button
+
+            android:id="@+id/bt_showpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/edt_userpwd"
+            android:layout_centerVertical="true"
+            android:text="显示密码"
+            />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/cb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_kuang_userpwd"
+        android:text="记住密码"/>
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_login"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="登录"
+        android:textSize="24sp"
+        custom:pb_colorComplete="@color/green_complete"
+        custom:pb_colorError="@color/red_error"
+        custom:pb_colorNormal="@color/blue_normal"
+        custom:pb_colorPressed="@color/blue_pressed"
+        custom:pb_colorProgress="@color/purple_progress"
+        custom:pb_textComplete="Success"
+        custom:pb_textError="Error"
+        custom:pb_textProgress="Loading"
+
+        />
+
+
+</RelativeLayout>

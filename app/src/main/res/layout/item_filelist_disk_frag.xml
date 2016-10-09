@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_dir_disk_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgv_dir_disk_frag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cloud_dir_icon"/>
+
+        <TextView
+            android:id="@+id/tv_dir_disk_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgv_dir_disk_frag"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="14"
+            android:singleLine="true"
+            android:text="xxxxx"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_file_disk_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgv_file_disk_frag"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_title_file_disk_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgv_file_disk_frag"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="14"
+            android:singleLine="true"
+            android:text="ssssssssss"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_size_file_disk_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_title_file_disk_frag"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgv_file_disk_frag"
+            android:gravity="center"
+            android:text="size"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_time_file_disk_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_title_file_disk_frag"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_size_file_disk_frag"
+            android:gravity="center"
+            android:text="time"
+            android:textSize="14sp"
+            />
+
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/cb_disk_frag"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/cb_disk_selector"
+        android:button="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+</RelativeLayout>

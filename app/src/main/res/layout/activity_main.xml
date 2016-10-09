@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.setsuna.cloudapp.ui.activity.MainActivity">
+<LinearLayout
+    android:id="@+id/ll_main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <TextView
+        android:id="@+id/tv_clouddisk_ll_main_activity"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="云盘"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#0af"
+        android:background="@drawable/title_tab_normal"/>
+    <TextView
+        android:id="@+id/tv_album_ll_main_activity"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="相册"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#0af"
+        android:background="@drawable/title_tab_normal"/>
+    <TextView
+        android:id="@+id/tv_other_ll_main_activity"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="其他"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#0af"
+        android:background="@drawable/title_tab_normal"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:background="@drawable/title_tab_selected"
+            android:id="@+id/tv_mask_ll_main_activity"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="网盘"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+<android.support.v4.view.ViewPager
+    android:layout_below="@+id/ll_main_activity"
+    android:id="@+id/vp_main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</RelativeLayout>

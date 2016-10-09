@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+                android:background="#fff"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.setsuna.cloudapp.ui.fragment.DiskFragment">
+    <TextView
+        android:background="#ccc"
+        android:text="查看下载列表"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/tv_showdownload_disk_frag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:clickable="true"
+        />
+<com.setsuna.cloudapp.ui.views.NaviBar
+    android:id="@+id/navibar_disk_frag"
+    android:layout_below="@+id/tv_showdownload_disk_frag"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"/>
+    <!-- TODO: Update blank fragment layout -->
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        android:layout_below="@+id/navibar_disk_frag"
+        android:id="@+id/swipeToLoadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:swipe_style="classic"
+        android:layout_above="@+id/ll_disk_frag">
+
+        <include
+            android:id="@id/swipe_refresh_header"
+            layout="@layout/layout_twitter_header"/>
+        <ListView
+            android:id="@id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include
+            android:id="@id/swipe_load_more_footer"
+            layout="@layout/layout_classic_footer"/>
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+
+<LinearLayout
+    android:id="@+id/ll_disk_frag"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+    <FrameLayout
+        android:id="@+id/fl_upload_bottom_disk_frag"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_delog_btn_selector">
+        <TextView
+            android:id="@+id/tv_upload_bottom_disk_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/menu_upload"
+            android:layout_gravity="center"
+            android:text="上传"
+            android:gravity="center"
+            android:padding="5dp"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_share_bottom_disk_frag"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_delog_btn_selector">
+        <TextView
+            android:id="@+id/tv_share_bottom_disk_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/menu_share_gray"
+            android:layout_gravity="center"
+            android:text="分享"
+            android:gravity="center"
+            android:padding="5dp"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_download_bottom_disk_frag"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_delog_btn_selector">
+        <TextView
+            android:id="@+id/tv_download_bottom_disk_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/menu_download_gray"
+            android:layout_gravity="center"
+            android:text="下载"
+            android:gravity="center"
+            android:padding="5dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_more_bottom_disk_frag"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_delog_btn_normal">
+        <TextView
+            android:id="@+id/tv_more_bottom_disk_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/menu_more_gray"
+            android:layout_gravity="center"
+            android:text="更多"
+            android:gravity="center"
+            android:padding="5dp"/>
+    </FrameLayout>
+
+</LinearLayout>
+</RelativeLayout>

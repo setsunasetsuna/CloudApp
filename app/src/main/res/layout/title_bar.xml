@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+    >
+
+    <TextView
+        android:id="@+id/title_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_tab_normal"
+        android:gravity="center"
+        android:text="迷之云盘"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/title_left"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/title_tab_normal"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/qihoo_accounts_btn_top_back_normal"
+        android:gravity="center"
+        android:paddingEnd="15dp"
+        android:text="返回"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+</RelativeLayout>

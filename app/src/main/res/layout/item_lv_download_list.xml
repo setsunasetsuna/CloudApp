@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/more_downloaded"
+        android:id="@+id/imgv_item_lv_download"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_title_item_lv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imgv_item_lv_download"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="14"
+        android:singleLine="true"
+        android:text="ssssssssss"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_size_item_lv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_title_item_lv_download"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imgv_item_lv_download"
+        android:gravity="center"
+        android:text="size"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_time_item_lv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_title_item_lv_download"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv_size_item_lv_download"
+        android:gravity="center"
+        android:text="time"
+        android:textSize="14sp"
+        />
+<TextView
+        android:id="@+id/tv_state_item_lv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_title_item_lv_download"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv_size_item_lv_download"
+        android:gravity="center"
+        android:text="time"
+        android:textSize="14sp"
+        />
+
+    <CheckBox
+        android:button="@null"
+        android:id="@+id/cb_stop_item_lv_download"
+        android:layout_centerVertical="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/download_selector"
+        android:layout_toLeftOf="@+id/ib_delete_item_lv_download"/>
+
+    <ImageButton
+        android:id="@+id/ib_delete_item_lv_download"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/trans_over"
+        android:layout_marginEnd="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+<ProgressBar
+    android:id="@+id/pb_item_lv_download"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
